@@ -14,6 +14,7 @@ end
 
 
 Rails.application.routes.draw do
-  root 'welcome#index'
+  get "boards",to: 'welcome#index'
+  get 'boards/new',to: 'welcome#new'
 end
 
